@@ -89,21 +89,21 @@ public class SortingStudentTests {
                 comp.getCount() <= 45 && comp.getCount() != 0);
     }
 
-    /* @Test(timeout = TIMEOUT)
+    @Test(timeout = TIMEOUT)
     public void testMergeSort() {
         Sorting.mergeSort(tas, comp);
         assertArrayEquals(tasByName, tas);
         assertTrue("Number of comparisons: " + comp.getCount(),
-                comp.getCount() <= 21 && comp.getCount() != 0);
+                comp.getCount() <= 11 && comp.getCount() != 0);
     }
 
-    @Test(timeout = TIMEOUT)
+    /* @Test(timeout = TIMEOUT)
     public void testQuickSort() {
         Sorting.quickSort(tas, comp, new Random(234));
         assertArrayEquals(tasByName, tas);
         assertTrue("Number of comparisons: " + comp.getCount(),
                 comp.getCount() <= 27 && comp.getCount() != 0);
-    }
+    } */
 
     @Test(timeout = TIMEOUT)
     public void testLsdRadixSort() {
@@ -111,7 +111,7 @@ public class SortingStudentTests {
         int[] sortedArray = new int[] {-85, 3, 20, 28, 54, 58, 84, 122};
         Sorting.lsdRadixSort(unsortedArray);
         assertArrayEquals(sortedArray, unsortedArray);
-    } */
+    }
 
     /**
      * Class for testing proper sorting.
