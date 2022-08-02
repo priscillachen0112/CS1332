@@ -94,7 +94,7 @@ public class SortingStudentTests {
         Sorting.mergeSort(tas, comp);
         assertArrayEquals(tasByName, tas);
         assertTrue("Number of comparisons: " + comp.getCount(),
-                comp.getCount() <= 11 && comp.getCount() != 0);
+                comp.getCount() <= 21 && comp.getCount() != 0);
     }
 
     /* @Test(timeout = TIMEOUT)
